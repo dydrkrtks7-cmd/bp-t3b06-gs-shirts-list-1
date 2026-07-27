@@ -1,474 +1,89 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="emerald" data-build="3f5a9c2b">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>강서 셔츠룸 정보 – 끝판왕 t3b06</title>
-    <meta name="description" content="강서 셔츠룸 정보 총정리. 시스템, 가격, 위치 전격 공개. 010-6279-0862. 압도적 시스템, 니 취향 저격. 지금 쳐들어와.">
-    <meta name="keywords" content="강서 셔츠룸 정보, 강서 셔츠룸 시스템, 강서 셔츠룸 가격, 강서 셔츠룸 위치, 셔츠룸 강서, 강서구 셔츠룸, 셔츠룸 정보">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://t3b06-gs-shirts-list-1.vercel.app/">
-    <meta property="og:title" content="강서 셔츠룸 정보 – 셔츠룸 끝판왕 t3b06">
-    <meta property="og:description" content="강서 셔츠룸 정보 뿌신다. 시스템, 가격, 위치 몽땅 공개. 010-6279-0862. 노빠꾸 직진.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="강서 셔츠룸 정보 – 셔츠룸 끝판왕 t3b06">
-    <meta name="twitter:description" content="강서 셔츠룸 정보 뿌신다. 시스템, 가격, 위치 몽땅 공개. 010-6279-0862. 노빠꾸 직진.">
-    <style>
-        /* === RESET === */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* === CSS DNA: Street Brutalist + acid-yellow === */
-        :root {
-            --black: #0f0f0f;
-            --dark: #1a1a1a;
-            --yellow: #eaff00;
-            --yellow-dim: #b8cc00;
-            --white: #f0f0f0;
-            --gray: #2a2a2a;
-            --glow: 0 0 20px rgba(234, 255, 0, 0.3);
-            --font: 'Segoe UI', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
-            --brutal-shadow: 6px 6px 0px #000;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: var(--font);
-            background: var(--black);
-            color: var(--white);
-            line-height: 1.5;
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
-            padding: 0 16px;
-        }
-
-        /* === 타이포 브루탈리즘 === */
-        h1, h2, h3, h4 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-            color: var(--yellow);
-        }
-
-        h1 {
-            font-size: clamp(2.2rem, 8vw, 4.5rem);
-            line-height: 1;
-            text-shadow: 4px 4px 0 #000;
-            margin-bottom: 0.3em;
-        }
-
-        h2 {
-            font-size: clamp(1.8rem, 5vw, 3rem);
-            border-left: 8px solid var(--yellow);
-            padding-left: 20px;
-            margin: 60px 0 30px 0;
-        }
-
-        h3 {
-            font-size: clamp(1.3rem, 3vw, 1.8rem);
-            margin-bottom: 15px;
-        }
-
-        p {
-            margin-bottom: 1.2em;
-            font-size: 1.05rem;
-        }
-
-        a {
-            color: var(--yellow);
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.15s;
-        }
-
-        a:hover {
-            color: var(--white);
-            text-shadow: 0 0 8px var(--yellow);
-        }
-
-        /* === 레이아웃 풀블리드 === */
-        header, nav, main, section, footer {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 16px;
-        }
-
-        /* === 헤더 + 네비 === */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 3px solid var(--yellow);
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: var(--yellow);
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            line-height: 1;
-        }
-
-        .logo span {
-            color: var(--white);
-            font-size: 0.9rem;
-            display: block;
-            letter-spacing: 2px;
-        }
-
-        /* 네비게이션 */
-        nav {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-
-        nav a {
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 8px 0;
-            border-bottom: 2px solid transparent;
-            transition: 0.2s;
-        }
-
-        nav a:hover {
-            border-bottom-color: var(--yellow);
-        }
-
-        .tel-link {
-            display: inline-block;
-            background: var(--yellow);
-            color: var(--black);
-            padding: 10px 24px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            border-radius: 0;
-            box-shadow: var(--brutal-shadow);
-            transition: 0.2s;
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-        }
-
-        .tel-link:hover {
-            background: var(--white);
-            color: var(--black);
-            box-shadow: 2px 2px 0 #000;
-            transform: translate(2px, 2px);
-        }
-
-        /* 햄버거 메뉴 (모바일) */
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            background: none;
-            border: none;
-            padding: 5px;
-        }
-
-        .hamburger-menu span {
-            width: 30px;
-            height: 4px;
-            background: var(--yellow);
-            border-radius: 0;
-            transition: 0.3s;
-        }
-
-        /* 모바일 nav 반응 */
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 10px;
-                padding: 20px 0;
-                border-top: 2px solid var(--yellow);
-                margin-top: 10px;
-            }
-
-            nav.active {
-                display: flex;
-            }
-
-            .hamburger-menu {
-                display: flex;
-            }
-
-            .tel-link {
-                width: 100%;
-                text-align: center;
-                padding: 14px;
-            }
-
-            header {
-                padding-bottom: 10px;
-            }
-        }
-
-        /* === 히어로 (정보 페이지 특화) === */
-        .hero-info {
-            padding: 80px 0 60px;
-            text-align: left;
-            border-bottom: 2px solid var(--gray);
-        }
-
-        .hero-info h1 {
-            font-size: clamp(2.5rem, 9vw, 5rem);
-        }
-
-        .hero-info .subhead {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--yellow-dim);
-            margin: 20px 0 30px;
-            max-width: 700px;
-        }
-
-        .hero-info .cta-group {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .btn-brutal {
-            display: inline-block;
-            background: var(--yellow);
-            color: var(--black);
-            padding: 16px 38px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            box-shadow: var(--brutal-shadow);
-            transition: 0.15s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-brutal:hover {
-            background: var(--white);
-            transform: translate(2px, 2px);
-            box-shadow: 3px 3px 0 #000;
-        }
-
-        .btn-outline {
-            display: inline-block;
-            background: transparent;
-            color: var(--yellow);
-            border: 3px solid var(--yellow);
-            padding: 14px 36px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            transition: 0.15s;
-        }
-
-        .btn-outline:hover {
-            background: var(--yellow);
-            color: var(--black);
-        }
-
-        /* === 정보 카드 섹션 === */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-
-        .info-card {
-            background: var(--dark);
-            border: 2px solid var(--gray);
-            padding: 30px 24px;
-            box-shadow: var(--brutal-shadow);
-            transition: 0.2s;
-        }
-
-        .info-card:hover {
-            border-color: var(--yellow);
-            transform: translate(-2px, -2px);
-            box-shadow: 8px 8px 0 #000;
-        }
-
-        .info-card h3 {
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        .info-card .label {
-            color: var(--yellow-dim);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .info-card p {
-            font-size: 1rem;
-            color: #ccc;
-        }
-
-        .info-card .highlight {
-            color: var(--yellow);
-            font-weight: 900;
-            font-size: 1.3rem;
-        }
-
-        /* === FAQ 섹션 === */
-        .faq-list {
-            display: grid;
-            gap: 16px;
-            margin: 40px 0 70px;
-        }
-
-        .faq-item {
-            background: var(--dark);
-            border-left: 6px solid var(--yellow);
-            padding: 22px 26px;
-            box-shadow: var(--brutal-shadow);
-        }
-
-        .faq-item strong {
-            color: var(--yellow);
-            font-size: 1.1rem;
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .faq-item p {
-            margin-bottom: 0;
-            color: #ccc;
-        }
-
-        /* === 푸터 === */
-        footer {
-            border-top: 3px solid var(--yellow);
-            padding: 40px 0;
-            margin-top: 40px;
-            text-align: center;
-            color: #777;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: var(--yellow-dim);
-        }
-
-        /* === 반응형 디테일 === */
-        @media (max-width: 768px) {
-            .hero-info {
-                padding: 40px 0;
-            }
-            .hero-info .cta-group {
-                flex-direction: column;
-            }
-            .btn-brutal, .btn-outline {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        /* 기타 잡다 */
-        .gap-40 {
-            height: 40px;
-        }
-        .fw-900 {
-            font-weight: 900;
-        }
-        .text-yellow {
-            color: var(--yellow);
-        }
-        .mt-20 {
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>강서 셔츠룸 모음 — 정보</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="강서 지역 셔츠룸을 처음 찾는 방문자를 위해, 운영 시간·예약 방식·주차 여부·가격대 등 실질적인 정보를 한눈에 정리했습니다. 현명한 선택을 위한 체크리스트와 상황별 주의점을 제공합니다.">
+<meta name="keywords" content="강서 셔츠룸, 셔츠룸 정보, 강서 셔츠룸 운영시간, 강서 셔츠룸 예약, 강서 셔츠룸 주차">
+<link rel="canonical" href="https://gangseo-shirt-tip.hardcoreroom.com/about.html">
+<meta property="og:title" content="강서 셔츠룸 모음 — 정보">
+<meta property="og:description" content="강서 지역 셔츠룸의 운영시간, 예약절차, 주차·편의시설 등 상세 정보를 확인하고, 상황별 체크리스트로 현명하게 선택하세요.">
+<meta property="og:url" content="https://gangseo-shirt-tip.hardcoreroom.com/about.html">
 </head>
 <body>
 
-    <!-- 헤더 -->
-    <header>
-        <div class="logo">
-            t3b06
-            <span>#강서셔츠룸</span>
-        </div>
-        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.parentNode.querySelector('nav').classList.toggle('active')">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav>
-            <a href="#">홈</a>
-            <a href="#">모음</a>
-            <a href="#">정보</a>
-            <a href="#">후기</a>
-            <a href="tel:010-6279-0862" class="tel-link">☏ 010-6279-0862</a>
-        </nav>
-    </header>
+<nav class="nav-present">
+  <ul>
+    <li><a href="/overview">개요</a></li>
+    <li><a href="/info">정보</a></li>
+    <li><a href="/guide">가이드</a></li>
+    <li><a href="/contact">연락처</a></li>
+  </ul>
+</nav>
 
-    <main>
-        <!-- 히어로 정보 -->
-        <section class="hero-info">
-            <h1>강서 셔츠룸<br>정보 뿌신다</h1>
-            <p class="subhead">시스템? 가격? 위치? 몽땅 까발린다. 니가 원하는 그곳, 여기다.</p>
-            <div class="cta-group">
-                <a href="tel:010-6279-0862" class="btn-brutal">☎ 지금 전화</a>
-                <a href="#" class="btn-outline">▼ 더 알아보기</a>
-            </div>
-        </section>
+<section class="t-side-h16g">
+  <h1>강서 셔츠룸, 정확히 무엇을 기대해야 할까?</h1>
+  <p>강서 지역에 위치한 셔츠룸은 단순히 옷을 교체하는 공간을 넘어, 개인의 프라이버시와 효율성을 동시에 추구하는 특수한 서비스다. 이 페이지는 그들만이 제공하는 고유한 운영방식과 이용 조건을 투명하게 파헤친다. 사전에 알면 불필요한 혼란을 줄일 수 있다.</p>
+  <p>우선 운영시간, 예약 절차, 주차·대중교통 접근성, 결제 방식, 부가 서비스(와이파이·음료·청소 도구) 등을 체계적으로 정리한다. 각각의 항목은 상황별 선택 기준을 제시하며, 예기치 않은 불편을 최소화한다.</p>
+</section>
 
-        <!-- 정보 카드 그리드 -->
-        <section>
-            <h2>🔥 핵꿀팁 정보</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <span class="label">💣 시스템</span>
-                    <h3>압도적 시스템</h3>
-                    <p>입장부터 퇴장까지 노빠꾸. 프라이빗 룸, 무한 리필 주류, 1:1 전담 매니저. 니가 원하는 모든 걸 처리한다.</p>
-                    <span class="highlight">24시 풀가동</span>
-                </div>
-                <div class="info-card">
-                    <span class="label">💰 가격</span>
-                    <h3>가성비 끝판왕</h3>
-                    <p>기본 20만원대부터. 상위 1% 시스템에 일반 셔츠룸 가격. 돈 아깝다는 말은 여기서 하지 마라.</p>
-                    <span class="highlight">최저가 보장</span>
-                </div>
-                <div class="info-card">
-                    <span class="label">📍 위치</span>
-                    <h3>강서구 중심</h3>
-                    <p>발산역 3분 거리 / 마곡지구 인접. 차량 5분이면 도착. 네비 검색 't3b06' 바로 찾아와.</p>
-                    <span class="highlight">주차 완료</span>
-                </div>
-                <div class="info-card">
-                    <span class="label">🎯 취향</span>
-                    <h3>니 취향 저격</h3>
-                    <p>20대 초부터 30대 후반까지 100명 이상 라인업. 얼굴, 몸매, 말투까지 골라먹는 재미.</p>
-                    <span class="highlight">실사 100%</span>
-                </div>
-            </div>
-        </section>
+<div class="r-card-hvq8">
+  <ul>
+    <li><strong>운영시간</strong>
+      <p>대부분의 셔츠룸은 새벽 4시부터 새벽 9시까지 24시간 연중무휴로 운영한다. 다만, 특정 위치에서는 보안과 인근 주민 협의에 따라 저녁 10시 이후 문을 닫는 경우가 있다. 방문 전 해당 장소의 정확한 영업시간을 확인하는 것이 중요하다.</p>
+      <p>주말과 공휴일에도 변동 없이 영업하는 것이 일반적이지만, 일부는 특별 이벤트나 유지보수로 일시 휴무를 발표한다. 이러한 경우는 공식 SNS나 전화로 사전에 공지한다.</p>
+    </li>
+    <li><strong>예약 방식</strong>
+      <p>예약은 보통 모바일 앱 또는 전화로 가능하다. 실시간 빈자리 확인이 가능한 시스템이 대부분이며, 30분 단위로 최소 이용 시간을 설정한다. 급히 이용해야 할 경우, 당일 현장 방문으로도 가능하나 대기 시간이 길어질 수 있다.</p>
+      <p>예약 시 반드시 실명과 연락처를 입력해야 하며, 일부 셔츠룸은 신분증 제시를 요구한다. 이는 보안과 이용자 보호 차원에서 시행되는 정책이다.</p>
+    </li>
+    <li><strong>주차·교통 접근성</strong>
+      <p>대부분의 셔츠룸은 주요 골목길에 위치해 있어 거리 주차가 가능하지만, 일부는 전용 주차장을 운영한다. 주차 가능 여부와 비용은 각 매장마다 차이가 크므로, 방문 전 지도앱에서 정확히 확인한다.</p>
+      <p>대중교통을 이용할 경우, 가장 가까운 지하철역·버스 정류장이 안내 표지판에 표시되어 있다. 특히, 야간에 이용한다면 버스 운행 간격을 미리 파악해 두는 것이 유용하다.</p>
+    </li>
+    <li><strong>가격·결제</strong>
+      <p>일반적인 이용료는 30분당 5,000원에서 8,000원 사이이며, 장기 이용 시 패키지 할인 혜택을 제공한다. 현금, 카드, 모바일 결제 모두 가능하지만, 일부 구간에서는 현금만 받는 경우가 있으니 사전에 확인한다.</p>
+      <p>추가 서비스(와이파이·프리미엄 탈의용품·음료)는 별도 요금이 부과될 수 있다. 이때는 사전 결제 방식이 동일하게 적용된다.</p>
+    </li>
+    <li><strong>부가 서비스와 편의시설</strong>
+      <p>와이파이와 전기 콘센트는 대부분 기본 제공되며, 고급 셔츠룸에서는 개인 락커와 물티슈, 소형 샤워 시설까지 구비한다. 이러한 부가 서비스는 이용료와 별도로 청구되는 경우가 많다.</p>
+      <p>청결 상태와 위생 관리 여부는 직접 확인하기 어려우므로, 방문 직후 내부를 살펴보고 의심스러운 부분은 즉시 관리인에게 문의한다.</p>
+    </li>
+  </ul>
+</div>
 
-        <!-- 추가 상세 정보 (스페셜) -->
-        <section>
-            <h2>⚡ 이건 꼭 알아
+<section class="v-item-9fmg">
+  <h2>상황별 체크리스트</h2>
+  <p><strong>개인 이용 (1인)</strong></p>
+  <p>1) 예약 전 본인 인증 필요 여부 확인 2) 주차 가능 여부와 거리 확인 3) 이용 시간 최소 30분 이상 확보</p>
+  <p><strong>단체 이용 (2~4인)</strong></p>
+  <p>1) 동일 시간대에 다수 예약이 가능한지 확인 2) 추가 요금 발생 여부와 결제 수단 확인 3) 공간 규모와 개인 사물함 유무 점검</p>
+  <p><strong>특수 목적 (촬영·스튜디오 등)</strong></p>
+  <p>1) 조명·전원 설비 제공 여부 2) 사전 계약서와 보험 조건 검토 3) 야간 이용 시 추가 보안 비용 확인</p>
+</section>
+
+<section class="r-foot-5yxk">
+  <h2>자주 묻는 질문 (FAQ)</h2>
+  <ul>
+    <li><strong>Q: 예약을 취소하면 환불이 되나요?</strong>
+      <p>A: 대부분의 셔츠룸은 24시간 전까지는 전액 환불이 가능하지만, 당일 취소 시 일부 수수료가 부과된다. 정확한 정책은 각 매장의 이용 약관을 확인한다.</p>
+    </li>
+    <li><strong>Q: 남는 시간이 있을 경우 연장 이용이 가능한가요?</strong>
+      <p>A: 실시간 빈자리 확인이 가능하면 바로 연장이 가능하지만, 이미 다음 예약이 잡혀 있는 경우 연장이 제한될 수 있다. 연장 여부는 현장 직원에게 문의한다.</p>
+    </li>
+    <li><strong>Q: 청결 상태는 어떻게 관리되나요?</strong>
+      <p>A: 셔츠룸은 30분 단위로 청소 팀이 방문해 전용 청소 도구와 소독제를 사용한다. 이용 전후에 손소독제를 비치하고, 위생에 민감한 이용자는 직접 확인 후 사용한다.</p>
+    </li>
+    <li><strong>Q: 주차 공간이 부족할 경우 대체 교통수단은?</strong>
+      <p>A: 인근에 공용 자전거 대여소나 전동 킥보드 스테이션이 위치해 있는 경우가 많다. 대중교통과 연계된 셔츠룸이라면, 지하철·버스와 연계된 셔틀 서비스를 제공하는 곳도 있다.</p>
+    </li>
+  </ul>
+</section>
+
+<footer class="r-foot-5yxk">
+  <span>© 2026 강서 셔츠룸 정보 제공. 모든 권리 보유.</span>
+</footer>
+
 </body>
 </html>

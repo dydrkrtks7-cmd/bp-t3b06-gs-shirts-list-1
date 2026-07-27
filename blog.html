@@ -1,314 +1,98 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="slate" data-build="a1b2c3d4">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강서 셔츠룸 모음 블로그 - bro들의 생생 후기</title>
-    <meta name="description" content="강서 셔츠룸 모음 블로그. 형들 말고 bro들이 직접 가본 곳만 쓴다. 강서구 셔츠룸 추천, 가성비, 분위기까지 진짜 리뷰.">
-    <meta name="keywords" content="강서 셔츠룸 모음, 강서 셔츠룸 블로그, 강서구 셔츠룸 후기, 셔츠룸 추천, 강서 셔츠룸 위치">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://t3b06-gs-shirts-list-1.vercel.app/blog">
-    <!-- OG 메타 -->
-    <meta property="og:title" content="강서 셔츠룸 모음 블로그 - bro들의 생생 후기">
-    <meta property="og:description" content="강서 셔츠룸 모음 블로그. 진짜 리뷰로 증명하는 곳만 모았다. 가성비부터 프리미엄까지 직접 가본 이야기.">
-    <meta property="og:url" content="https://t3b06-gs-shirts-list-1.vercel.app/blog">
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="ko_KR">
-    <!-- 트위터 카드 -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="강서 셔츠룸 모음 블로그 - bro들의 생생 후기">
-    <meta name="twitter:description" content="강서 셔츠룸 모음 블로그. 진짜 리뷰로 증명하는 곳만 모았다. 가성비부터 프리미엄까지 직접 가본 이야기.">
-    <style>
-        /* CSS 리셋 + 브루탈리스트 DNA */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        /* 모든 요소에 기본적인 raw 스타일 */
-        img, svg, video, canvas {
-            max-width: 100%;
-            display: block;
-        }
-        a {
-            color: #ff2a6d;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s;
-        }
-        a:hover {
-            border-bottom-color: #ff2a6d;
-        }
-        /* 타이포그래피 - 오버사이즈, 굵게 */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #ffffff;
-        }
-        h1 {
-            font-size: 3.5rem;
-            line-height: 1.1;
-            margin-bottom: 1rem;
-        }
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 0.75rem;
-        }
-        h3 {
-            font-size: 1.75rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            margin-bottom: 1.25rem;
-            font-size: 1.125rem;
-        }
-        /* 공간 설정: airy */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
-        /* 상단 네비게이션 */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-            background-color: #111;
-            border-bottom: 3px solid #ff2a6d;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .navbar .logo a {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: #fff;
-            border: none;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        .navbar .logo a:hover {
-            color: #ff2a6d;
-            border: none;
-        }
-        .navbar .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .navbar .nav-links a {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #ccc;
-            border: none;
-            padding: 0.25rem 0;
-            position: relative;
-        }
-        .navbar .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background-color: #ff2a6d;
-            transition: width 0.3s;
-        }
-        .navbar .nav-links a:hover::after {
-            width: 100%;
-        }
-        .navbar .nav-links a.active {
-            color: #ff2a6d;
-        }
-        /* 햄버거 버튼 (모바일) */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0.5rem;
-        }
-        .hamburger span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background-color: #fff;
-            margin: 4px 0;
-            transition: all 0.3s;
-        }
-        /* 히어로/블로그 헤더 */
-        .hero {
-            padding: 3rem 1.5rem;
-            text-align: center;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            border-bottom: 3px solid #ff2a6d;
-            margin-bottom: 2rem;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            color: #fff;
-            text-shadow: 0 0 20px rgba(255,42,109,0.5);
-        }
-        .hero p {
-            font-size: 1.25rem;
-            color: #b0b0b0;
-            max-width: 700px;
-            margin: 0 auto 1.5rem;
-        }
-        .hero .meta {
-            font-size: 0.9rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        /* 블로그 본문 카드 */
-        .blog-card {
-            background-color: #1a1a1a;
-            border: 2px solid #333;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 0;
-            box-shadow: 8px 8px 0 #000;
-        }
-        .blog-card h2 {
-            font-size: 2rem;
-            color: #fff;
-            border-left: 6px solid #ff2a6d;
-            padding-left: 1rem;
-        }
-        .blog-card .subhead {
-            color: #ff2a6d;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-        .blog-card p {
-            color: #d0d0d0;
-        }
-        .blog-card .highlight {
-            background-color: #222;
-            padding: 1rem;
-            border-left: 4px solid #ff2a6d;
-            margin: 1.5rem 0;
-            font-weight: 600;
-        }
-        .blog-card .highlight strong {
-            color: #ff2a6d;
-        }
-        /* 버튼 */
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            background-color: #ff2a6d;
-            color: #000;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 4px 4px 0 #000;
-            text-decoration: none;
-            border: none;
-        }
-        .btn:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0 #000;
-            border: none;
-        }
-        .btn--tel {
-            background-color: #00e5ff;
-            color: #000;
-        }
-        .btn--tel::before {
-            content: "📞 ";
-        }
-        /* 푸터 */
-        footer {
-            background-color: #111;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            border-top: 3px solid #ff2a6d;
-            margin-top: auto;
-        }
-        footer p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        /* 반응형 768px */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            h3 { font-size: 1.3rem; }
-            .container { padding: 1.5rem 1rem; }
-            .navbar .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                right: 1rem;
-                background-color: #111;
-                border: 2px solid #ff2a6d;
-                padding: 1rem;
-                gap: 1rem;
-                min-width: 200px;
-            }
-            .navbar .nav-links.open {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .hero h1 { font-size: 2.2rem; }
-            .blog-card { padding: 1.5rem; }
-        }
-        /* 작은 화면에서 추가 조정 */
-        @media (max-width: 480px) {
-            .hero { padding: 2rem 1rem; }
-            .blog-card h2 { font-size: 1.5rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>블로그</title>
+  <meta name="description" content="강서 지역 셔츠룸을 목적·인원·시간대별로 비교·선택할 수 있는 실용적인 가이드. 체크리스트와 FAQ까지 한눈에 정리했습니다.">
+  <meta name="keywords" content="강서 셔츠룸, 셔츠룸 가이드, 강서 셔츠룸 선택 기준">
+  <link rel="canonical" href="https://gangseo-shirt-tip.hardcoreroom.com/blog.html">
+  <meta property="og:title" content="강서 셔츠룸 모음 — 조건에 맞는 셔츠룸 선택 가이드">
+  <meta property="og:description" content="강서 지역 셔츠룸을 목적·인원·시간대별로 비교·선택할 수 있는 실용적인 가이드.">
+  <meta property="og:url" content="https://gangseo-shirt-tip.hardcoreroom.com/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gangseo-shirt-tip.hardcoreroom.com/og-image.jpg">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <!-- 네비게이션 -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="/">BRO SHIRTS</a>
-        </div>
-        <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/">홈</a></li>
-            <li><a href="/blog" class="active">블로그</a></li>
-            <li><a href="tel:010-0000-0000" class="tel-link">전화 예약</a></li>
-        </ul>
+  <header>
+    <nav>
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="t-ico-moar">☰</label>
+      <ul class="n-body-2ftu x-list-fuer">
+        <li><a href="/">홈</a></li>
+        <li><a href="/guide">가이드</a></li>
+        <li><a href="/list">셀러리스트</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">연락처</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- 히어로 (블로그 헤더) -->
-    <section class="hero">
-        <div class="container">
-            <h1>강서 셔츠룸 모음<br>bro들의 진짜 후기</h1
+  <main class="content">
+    <section class="section">
+      <h1>강서 셔츠룸, 나에게 딱 맞는 선택은?</h1>
+      <p>강서구는 다양한 셔츠룸이 밀집해 있어 목적에 맞는 장소를 고르는 일이 쉽지 않을 때가 많아요. 오늘은 “목적·인원·시간대”라는 세 가지 축을 기준으로, 여러분이 찾고 있는 최적의 셔츠룸을 찾는 과정을 친절히 안내해 드릴게요.</p>
+      <p>예를 들어, 친구와 함께 파티 전 준비를 하려는 경우와, 업무 회의를 위해 조용히 촬영을 해야 하는 경우는 전혀 다른 환경이 필요하죠. 이런 차이를 한눈에 파악할 수 있도록 실제 현장 경험을 바탕으로 체크리스트와 서브 섹션을 정리했습니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>1️⃣ 목적별 셔츠룸 선택 포인트</h2>
+      <p><strong>파티·모임</strong>을 위한 셔츠룸은 넓은 공간과 조명, 음악 설비가 중요한데요. 무대가 있거나 파티용 조명이 설치된 곳을 우선 고려해 보세요. 또한, 음료와 간식을 자유롭게 반입할 수 있는 정책도 확인하면 좋습니다.</p>
+      <p><strong>비즈니스·워크숍</strong>에서는 방음 처리와 프로젝터·스크린 설치 여부가 핵심입니다. 회의실 겸용으로 이용할 수 있는 공간이라면, 책상 배치와 전원 콘센트 위치도 미리 체크해 두세요. 대부분의 셔츠룸은 대형 모니터 대신 TV를 제공하니, 필요 시 HDMI 케이블을 별도로 준비하는 것이 좋습니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>2️⃣ 인원 규모에 맞는 공간 구분</h2>
+      <p>소규모(2~4인) 모임이라면 <em>1인용 혹은 2인용</em> 작은 방을 예약하는 것이 비용 효율적입니다. 이때는 탈의실이 없는 스튜디오형 공간을 선택하면 이동 동선이 최소화돼 편리합니다.</p>
+      <p>중규모(5~10인) 그룹은 <em>중형 방</em>을 찾아보세요. 일반적으로 2~3개의 탈의실이 함께 배치돼 있어, 동시에 여러 사람이 이용하기에 적합합니다. 공간이 넓어도 분위기 전환을 위해 조명 색상을 바꿀 수 있는 모델을 우선 선택하면 활용도가 높아집니다.</p>
+      <p>대규모(10인 이상) 이벤트는 <em>대형 스위트룸</em> 혹은 복합형 공간을 추천합니다. 이 경우, 인원당 평당 면적을 1.5~2㎡ 정도 확보하면 충분히 쾌적하게 이용할 수 있습니다. 또한, 사전 현장 방문을 통해 화장대와 거울 배치가 충분한지 확인하는 것이 좋습니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>3️⃣ 시간대별 활용 팁</h2>
+      <p>오전(9시~12시)에는 대부분의 셔츠룸이 비교적 한산해서 가격 할인이 적용되는 경우가 많습니다. 이때는 촬영 준비와 세팅 시간을 충분히 확보할 수 있어, 똑똑한 선택이 됩니다.</p>
+      <p>오후(13시~18시)는 가장 붐비는 시간대이니, 인기 있는 셔츠룸은 사전에 예약을 확정하고, 혹시 모를 대기 시간을 대비해 여유로운 일정 조정을 권장합니다.</p>
+      <p>야간(19시~23시)은 파티·클럽 분위기에 맞는 셔츠룸이 많이 운영됩니다. 조명이 어두운 분위기를 연출하거나, DJ 부스 설치가 가능한 곳을 찾는다면 이 시간대를 활용해 보세요. 다만, 소음 규제와 주변 이웃에 대한 배려도 잊지 마세요.</p>
+    </section>
+
+    <section class="section">
+      <h2>4️⃣ 셔츠룸 선택 체크리스트</h2>
+      <ul class="card">
+        <li>☐ 방문 전 전화 혹은 온라인으로 운영시간 확인</li>
+        <li>☐ 예약 전 취소 정책 및 환불 규정 검토</li>
+        <li>☐ 방음·조명·전원 설비 현장 확인</li>
+        <li>☐ 인원·목적에 맞는 탈의실 수와 크기 체크</li>
+        <li>☐ 반입 가능 물품(음료·음식·장비) 여부 확인</li>
+        <li>☐ 주변 교통·주차 시설 확인</li>
+        <li>☐ 결제 수단(현금·카드· 모바일) 지원 여부</li>
+      </ul>
+      <p>위 체크리스트를 활용하면, 예상치 못한 불편을 최소화하고 목적에 최적화된 셔츠룸을 쉽게 찾을 수 있습니다. 특히, 대규모 행사 준비 시 사전 현장 답사와 사전 예약을 병행하면 더욱 원활한 진행이 가능해요.</p>
+    </section>
+
+    <section class="section">
+      <h2>📚 자주 묻는 질문 (FAQ)</h2>
+      <h3>Q1) 셔츠룸에 촬영 장비를 직접 가져가도 되나요?</h3>
+      <p>대부분의 셔츠룸은 촬영 장비 반입을 허용하지만, 무게가 많이 나가는 조명 세트나 스탠드 등은 사전 협의가 필요합니다. 입구에 설치된 전원 용량을 초과하지 않도록 주의해 주세요.</p>
+
+      <h3>Q2) 예약을 취소하고 싶을 때는 어떻게 해야 하나요?</h3>
+      <p>각 셔츠룸마다 취소 정책이 다르니, 예약 시 확인 이메일에 명시된 기간 내에 전화 혹은 온라인 시스템을 통해 취소 신청하면 됩니다. 일부 셔츠룸은 24시간 전까지 전액 환불을 제공하니, 일정 변경 시 바로 확인하는 것이 좋습니다.</p>
+
+      <h3>Q3) 주말에 이용하려면 추가 비용이 발생하나요?</h3>
+      <p>주말 및 공휴일은 수요가 높아 기본 요금에 프리미엄이 붙는 경우가 많아요. 사전에 가격표를 확인하고, 필요 시 할인 쿠폰이나 멤버십 혜택을 적용하면 비용을 절감할 수 있습니다.</p>
+
+      <h3>Q4) 셔츠룸 내부에서 음식물 섭취가 가능한가요?</h3>
+      <p>일부 셔츠룸은 음식 반입을 금지하고, 전용 휴게실을 별도로 운영합니다. 음식물을 섭취하려면 해당 셔츠룸이 제공하는 라운지나 지정된 공간을 이용해야 합니다. 미리 안내받지 않으면 청소 비용이 추가될 수 있으니 주의하세요.</p>
+    </section>
+
+    <section class="section">
+      <h2>마무리하며</h2>
+      <p>강서구 셔츠룸은 목적에 따라 다양한 옵션을 제공하므로, 위에서 제시한 기준을 적용해 직접 비교해 보면 선택이 훨씬 쉬워집니다. 이번 가이드를 바탕으로 자신의 상황에 맞는 최적의 장소를 찾아, 즐거운 촬영 혹은 성공적인 이벤트를 진행하시길 바랍니다.</p>
+      <p>궁금한 점이 있으면 언제든 댓글이나 문의 양식을 통해 알려 주세요. 여러분의 피드백을 반영해 더욱 풍부한 정보를 업데이트하겠습니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 강서 셔츠룸 가이드. All rights reserved.</p>
+  </footer>
 </body>
 </html>
